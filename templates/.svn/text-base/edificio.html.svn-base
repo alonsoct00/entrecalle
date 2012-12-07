@@ -1,0 +1,203 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="shortcut icon" href="..media/images/favicon.ico" type="image/x-icon"/>
+		<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="../media/js/sliding.js"></script>
+		<script type="text/javascript" src="../media/js/jquery.easing.js"></script>
+		<script type="text/javascript" src="../media/js/jquery.collapse.js"></script>
+		<script type="text/javascript" language="javascript" src="../media/js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" language="javascript">
+			$(function() {
+				
+$("#foo2").carouFredSel({
+	auto : false,
+	prev : "#foo1_prev",
+	next : "#foo1_next"
+});
+$("#foo2 a").prettyPhoto({
+	theme: "facebook",
+	changepicturecallback: function() {
+		$("#foo2").trigger("pause");
+	},
+	callback: function() {
+		$("#foo2").trigger("play");
+	}
+});
+			});
+		</script>
+		<script type="text/javascript" language="javascript" src="../media/js/jquery.carouFredSel-6.0.5-packed.js"></script>
+		<link type="text/css" rel="stylesheet" href="../media/css/sections.css"/>
+		<title>Entrecalle</title>
+		</head>
+		<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=225008170863169";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+<script type="text/javascript">    
+                $(document).ready(function() {
+                    $('#single').toggleButton({'selectionMode':'single'});
+		    $('#normal').toggleButton();
+		    $('#preselected').toggleButton();
+                    $('#imgholder').toggleButton({'buttonSelector':'.toggleBtn div'});
+                });
+            </script>
+<div id="sections">
+          <section>
+    <div id="middle_s">
+              <div id="left">
+        <div id="wrapper_left">
+                  <div id="blankWrapper">
+            <div class="space"></div>
+          </div>
+                  <!--end blank Wrapper--> 
+                  
+                </div>
+        <!--end Wrapper Left-->
+        
+        <div id="slider">
+                  <div class="types">Nombre Edificio</div>
+                  <div class="denuncia">
+            <div class="bad">
+                      <div id="imgholder">
+                <div class="toggleBtn">
+                          <div id="buttonImg"></div>
+                          <span>Denuncia Olvidado </span>
+                          <input type="checkbox" name="imgdemo" id="denuncia" value="3" />
+                        </div>
+              </div>
+                    </div>
+          </div>
+                  <div class="prettyContainer">
+            <div class="image_carousel">
+                      <div id="foo2"> 
+                <!--IMAGENES--> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"><img src="../media/images/dummys/ffffff.png" alt="basketball" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="beachtree" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="cupcackes" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="hangmat" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="new york" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="laundry" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="mom son" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="picknick" width="125" height="125" /> </a> 
+                <a rel="prettyPhoto[caroufredsel]" href="../media/images/dummys/750X550.png"> <img src="../media/images/dummys/ffffff.png" alt="shoes" width="125" height="125" /> </a> </div>
+                      <div class="clearfix"></div>
+                      <a class="prev" id="foo1_prev" href="#"><span>prev</span></a> <a class="next" id="foo1_next" href="#"><span>next</span></a> </div>
+          </div>
+                </div>
+        <div class="clear"></div>
+        <div id="mapa_edificio">
+                  <div class="types">Reseña</div>
+                  <div class="edit_this">
+            <div class="edit_button">Editar</div>
+          </div>
+                  <div id="reseña_edificio">
+                    <div class="reseña_txt">
+                      <h2>Antecedentes</h2>
+                      <div class="antecedentes"> Lectus porta pulvinar montes pulvinar augue. Pulvinar a et purus velit, lectus dapibus auctor. Nascetur scelerisque phasellus nascetur, sed montes a phasellus proin. In penatibus massa! Vut pulvinar? Duis sociis nisi ac ultrices nisi magnis! Dictumst tristique platea elit magna urna ridiculus mid aenean ultrices, pulvinar dolor ac. Aliquam dapibus lundium non, porttitor est pellentesque magnis vel, odio ut ut. Rhoncus vel turpis, a porttitor! Tincidunt turpis tempor! Et rhoncus montes elementum vel rhoncus, turpis aliquam, ultrices tempor odio est diam? Turpis mus elementum, integer nec placerat rhoncus turpis rhoncus nec lacus hac sed nec placerat? Amet integer ut tristique etiam ridiculus dictumst non turpis! Urna cras facilisis cum rhoncus porttitor parturient? Dictumst tristique nunc augue cum tristique, egestas, vut. </div>
+                      <h2>Estado Actual</h2>
+                      <div class="estado_actual"> Augue est porttitor pulvinar! Urna? Cursus non? Aliquam proin? Mattis non pellentesque placerat magna, arcu arcu lacus, placerat magna. Rhoncus nec et sed! Aliquet rhoncus mattis placerat tempor adipiscing nisi lundium ultricies, cras vel, sit, placerat sit amet parturient? Odio scelerisque turpis dapibus porta in turpis vel, pulvinar, dignissim eu? Aenean, turpis duis? A turpis aenean egestas magna velit! Et ac. Velit enim proin. Hac nascetur et tristique porta, habitasse porttitor mid massa natoque, vel ac. Vel, magna et! Scelerisque amet, urna odio vel platea magna placerat pid ut, dignissim ultricies? Penatibus tincidunt! Phasellus magnis, pellentesque magna eros nunc purus in tortor? Elementum, tortor augue nec nisi urna dignissim lorem mid porta tempor et cras facilisis odio nunc porta. </div>
+                    </div>
+                  </div>
+                  <div id="map_a"> <img src="../media/images/dummys/mapa600x500.png" width="600" height="500"/> </div>
+                  <div id="bio_autor">
+            <div class="types">Datos Edificio</div>
+            <div class="edit_this">
+                      <div class="edit_button">Editar</div>
+                    </div>
+            <div id="info_edificio">
+                      <div class="campo_vista">
+                <label>Autor</label>
+                <div class="input_txt">nombre del autor</div>
+              </div>
+                      <div class="campo_vista">
+                <label>Estilo</label>
+                <div class="input_txt">tipo de estilo</div>
+              </div>
+                      <div class="campo_vista">
+                <label>Fecha</label>
+                <div class="input_txt">dd/mm/aaaa</div>
+              </div>
+                      <div class="campo_vista">
+                <label>Ubicación</label>
+                <div class="input_txt">ubicacion referencia</div>
+              </div>
+                    </div>
+          </div>
+                </div>
+      </div>
+              <!--end left-->
+              
+              <div id="right"> 
+        <!--<div class="listas">
+          <ul id="NavLetter" class="lista">
+            <!--lista de elementos en orden alfabético
+          </ul>
+        </div>-->
+        <div id="patrocinadores">
+                  <div class="sponsor_side"><img src="../media/vistas/sponsor2.png" width="270" height="103"/></div>
+                  <div class="sponsor_side"><img src="../media/vistas/sponsor2.png" width="270" height="103"/></div>
+                  <div class="sponsor_side"><img src="../media/vistas/sponsor2.png" width="270" height="103"/></div>
+                </div>
+        <div class="clear"></div>
+        <div class="face_comments">
+                  <div class="fb-comments" data-href="https://www.facebook.com/entrecalle" data-num-posts="10" data-width="265"> </div>
+                </div>
+        <div id="left_side">
+                  <div id="contacto_side"><img src="../media/vistas/contactoside.png" width="271" height="103"/></div>
+                  <span>Último tweet</span>
+                  <div id="tweet_side"> 
+            <script type="text/javascript">
+  		$(document).ready(function(){var user='entrecalle';$.getJSON(		'http://twitter.com/statuses/user_timeline.json?screen_name='+user+'&count=4&callback=?',function(data){var tweet=data[0].			text;tweet=tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig,function(url){return'<a href="'+url+'">'+url+'</a>'}).replace(/B@([_a-z0-9]+)/ig,function(reply){return reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>'});$("#tweet_side").html(tweet)})})
+  </script>
+            <div class="loading"></div>
+          </div>
+                </div>
+      </div>
+              <!--end right--> 
+            </div>
+    <!--end middle--> 
+  </section>
+          <section id="foot">
+    <div class="types">Cronicas</div>
+    <div id="cronicas">
+              <div class="cronica">
+        <div class="f_cronica"><img src="../media/images/dummys/dummy_user.png" width="100" height="100"/></div>
+        <div class="txt_c">
+                  <div class="cronica_txt">
+                  Lectus porta pulvinar montes pulvinar augue. Pulvinar a et purus velit, lectus dapibus auctor. Nascetur scelerisque phasellus nascetur, sed montes a phasellus proin. In penatibus massa! Vut pulvinar? Duis sociis nisi ac ultrices nisi magnis! Dictumst tristique platea elit magna urna ridiculus mid aenean ultrices, pulvinar dolor ac. Aliquam dapibus lundium non, porttitor est pellentesque magnis vel, odio ut ut.</div>
+                </div>
+      </div>
+              <div class="cronica">
+        <div class="f_cronica"><img src="../media/images/dummys/dummy_user.png" width="100" height="100"/></div>
+        <div class="txt_c">
+                  <div class="cronica_txt">
+                  Lectus porta pulvinar montes pulvinar augue. Pulvinar a et purus velit, lectus dapibus auctor. Nascetur scelerisque phasellus nascetur, sed montes a phasellus proin. In penatibus massa! Vut pulvinar? Duis sociis nisi ac ultrices nisi magnis! Dictumst tristique platea elit magna urna ridiculus mid aenean ultrices, pulvinar dolor ac. Aliquam dapibus lundium non, porttitor est pellentesque magnis vel, odio ut ut.Pulvinar a et purus velit, lectus dapibus auctor. Nascetur scelerisque phasellus nascetur, sed montes a phasellus proin.</div>
+                </div>
+      </div>
+              <div class="cronica">
+        <div class="f_cronica"><img src="../media/images/dummys/dummy_user.png" width="100" height="100"/></div>
+        <div class="txt_c">
+                  <textarea name="" cols="" rows=""></textarea>
+                </div>
+                <div class="addcomment">Publicar</div>
+      </div>
+            </div>
+  </section>
+          <!--end foot--> 
+          
+        </div>
+<!--end wrapper-->
+
+</body>
+</html>

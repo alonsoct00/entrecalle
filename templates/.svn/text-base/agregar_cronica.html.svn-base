@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../media/css/agrega.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+</head>
+<body>
+<div id="main">
+  <div class="wrapper">
+    <div class="content">
+      <h1>Divulga el valor social en torno a la arquitectura!</h1>
+      <hr />
+      <h2></h2>
+      <!--<div class="encabezado"></div>-->
+      <div id="form_wrapper" class="form_wrapper">
+        <form class="cronica" action="#">
+          <h3>Anécdotas, historias, mitos, leyendas, datos curiosos, eventos, etc.</h3>
+          <div class="campo">
+          <input id="cronica_titulo" name="" type="cronic" />
+          </div>
+          <div class="campo">
+            <textarea name=""  rows="5" id="crono" type="cron" spellcheck="true" maxlength="500"></textarea>
+            <div id="counter"></div>
+          </div>
+          
+          <!--script caracteres--> 
+          <script type="text/javascript">
+                                $('#crono').keyup(function () {
+                                    var left = 500 - $(this).val().length;
+                                    if (left < 0) {
+                                        left = 0;
+                                    }
+                                    $('#counter').text('Caracteres restantes: ' + left);
+                                });
+                                </script>
+          <div class="campo"></div>
+          <div class="bottom">
+            <input type="submit" value="Publicar" />
+            <div class="clear"></div>
+          </div>
+        </form>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

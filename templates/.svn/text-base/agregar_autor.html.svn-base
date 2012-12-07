@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../media/css/agrega.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+<script src="../media/js/droparea.js"></script>
+</head>
+<body>
+<div id="main">
+  <div class="wrapper">
+    <div class="content">
+      <h1>Divulga a los autores de antes y ahora!</h1>
+      <hr />
+      <h2>Al completar lo mas relevante de la biografía de este autor, se avisará por<span> Entrecalle</span>, dejara de ser editable</h2>
+      <!--<div class="encabezado"></div>-->
+      <div id="form_wrapper" class="form_wrapper">
+        <div id="dropper">
+          <div id="areas">
+            <p>Max 10<sub>mb</sub> </p>
+            <input type="file" class="droparea spot" name="xfile" data-post="../media/php/upload.php" data-width="100" data-height="345" data-crop="true"/>
+            <input name="" type="cancel" value="cancelar" />
+            <!--<div id="form-result" class="clear">
+                    resultado:
+                </div>--> 
+            
+            <script type="text/javascript">
+  // Calling jQuery "droparea" plugin
+            $('.droparea').droparea({
+                'instructions': 'arrastra una imagen al recuadro, o haz click aquí',
+                'init' : function(result){
+                    //console.log('custom init',result);
+                },
+                'start' : function(area){
+                    area.find('.error').remove(); 
+                },
+                'error' : function(result, input, area){
+                    $('<div class="error">').html(result.error).prependTo(area); 
+                    return 0;
+                    //console.log('custom error',result.error);
+                },
+                'complete' : function(result, file, input, area){
+                    if((/image/i).test(file.type)){
+                        area.find('img').remove();
+                        //area.data('value',result.filename);
+                        area.append($('<img>',{'src': result.path + result.filename + '?' + Math.random()}));
+                    } 
+                    //console.log('custom complete',result);
+                }
+            });
+			</script> 
+          </div>
+        </div>
+        <form class="autor" action="#">
+          <h3>&nbsp;</h3>
+          <div class="campo">
+            <label>Nombre:</label>
+            <input id="name" type="text" maxlength="100" />
+          </div>
+          <div class="campo">
+            <label>Año de <br />
+              nacimiento</label>
+            <select name="select" id="select">
+            </select>
+            <label>Año de <br />
+              muerte</label>
+            <select name="select" id="select">
+            </select>
+          </div>
+          <div class="campo">
+            <label>Biografía</label>
+            <textarea id="bio" name="" rows="" type="txt" maxlength="200"></textarea>
+            <div id="counter"></div>
+          </div>
+          
+          <!--script caracteres--> 
+          <script type="text/javascript">
+                                $('#bio').keyup(function () {
+                                    var left = 200 - $(this).val().length;
+                                    if (left < 0) {
+                                        left = 0;
+                                    }
+                                    $('#counter').text('Caracteres restantes: ' + left);
+                                });
+                                </script>
+          <div class="campo">
+            <label>Despacho o <br/>
+              Estudio:</label>
+            <input id="bio" type="text" maxlength="200" />
+          </div>
+          <div class="bottom">
+            <input type="submit" value="Publicar" />
+            <div class="clear"></div>
+          </div>
+        </form>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

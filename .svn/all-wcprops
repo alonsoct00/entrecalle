@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/entrecalle/!svn/ver/36/trunk
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/entrecalle/!svn/ver/4/trunk/manage.py
+END
+.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/entrecalle/!svn/ver/33/trunk/.DS_Store
+END
+requirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/entrecalle/!svn/ver/4/trunk/requirements.txt
+END

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../media/css/register.css" />
+	<link rel="stylesheet" type="text/css" href="../media/css/common.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+	</head>
+	<body>
+    <div class="wrapper_m">
+      <div class="content">
+        <h1>Registrate!</h1>
+        <div class="encabezado">Gracias por transitar por<span> Entrecalle</span>, es momento de ser pieza clave <br />
+          en esta comunidad</div>
+        <div id="form_wrapper" class="form_wrapper">
+          <form action="#" id="register" class="register active">
+            <h3>
+              <div id="fbregister"><a href="#"></a></div>
+            </h3>
+            <div class="campo">
+              <label>Nombre:</label>
+              <input id="name" type="text" maxlength="50" class="validate[required] text-input" />
+            </div>
+            <div class="campo">
+              <label>Apellidos:</label>
+              <input id="lastname "type="text" maxlength="100" class="validate[required] text-input" />
+            </div>
+            <div class="campo">
+              <label>Apodo o <br />
+                Usuario:</label>
+              <input id="username" type="text" maxlength="16" title="max. 16 caracteres" class="validate[required] text-input"/>
+            </div>
+            <div class="campo">
+              <label>Email:</label>
+              <input id="email" type="text" class="validate[required,custom[email]]"  />
+            </div>
+            <div class="campo">
+              <label>Contraseña:</label>
+              <input id="password" type="password" title="min. 8 caracteres" class="validate[required] text-input" />
+            </div>
+            <div class="campo">
+              <label>Confirma<br />
+                Contraseña:</label>
+              <input id="cpassword" type="password" title="min. 8 caracteres" class="validate[required,equals[password]]"/>
+            </div>
+            <div class="campo">
+              <label>País:</label>
+              <select name="pais" id="pais" class="validate[required]">
+              </select>
+            </div>
+            <div class="campo">
+              <label>Sexo:</label>
+              <div class="sex">M</div>
+              <input name="M" type="radio" value="M" class="validate[required] radio"/>
+              <div class="sex">F</div>
+              <input name="F" type="radio" value="F" class="validate[required] radio"/>
+            </div>
+            <div class="campo">
+              <label>Fecha de <br />
+                nacimiento</label>
+              
+            </div>
+            <div class="campo"> 
+              <!--<label>Areas de <br />
+						interés</label>
+		<textarea name="" cols="" rows="2" draggable="false" type="txt" class="validate[required] text-input"></textarea>-->
+              <div id="tabs">
+                <ul>
+                </ul>
+                <div id="tabs-1">
+                  <dl>
+                    <dt>Areas de interés:</dt>
+                    <dd>
+                      <select id="intereses" class="multiselect" multiple="multiple" name="intereses[]">
+                        <option value="1">Historia</option>
+                        <option value="2">Ingenieria</option>
+                        <option value="3" selected="selected">Arquitectura</option>
+                        <option value="4">Construcción</option>
+                        <option value="5">Urbanismo</option>
+                        <option value="6" selected="selected">Tiempo libre</option>
+                        <option value="7">Diseño</option>
+                        <option value="8">Fotografía</option>
+                        <option value="9">Arte y Humanidades</option>
+                        <option value="10">Turismo</option>
+                        <option value="11">Ecoturismo</option>
+                        <option value="12">Medio Ambiente</option>
+                        <option value="13">Entretenimiento</option>
+                        <option value="14">Comunicación</option>
+                        <option value="15">Finanzas y Economía</option>
+                        <option value="16">Tecnología</option>
+                        <option value="17">Salud</option>
+                        <option value="18">Voluntariado</option>
+                      </select>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="remember">
+                <input type="checkbox" class="validate[minCheckbox[1]] checkbox"/>
+                <span><strong>He leído y acepto los terminos y condiciones</strong></span>.
+                <p></p>
+                <input id="agre" type="checkbox" />
+                <span><em>Enviame noticias a mi correo.</em></span> </div>
+              <input type="submit" value="Registrame" class="submit"/>
+              <span class="limpiar">
+              <input name="Restablecer" type="reset" value="limpiar" />
+              </span> <a href="login.html" class="linkform">Ya tienes una cuenta? Inicia sesión por aquí.</a>
+              <div class="clear"></div>
+            </div>
+          </form>
+          
+          <!--
+					<form class="login" id="login">
+					  <h3><div id="fblogin"><a href="#"></a></div></h3>
+						<div class="campo">
+							<label>Apodo o<br /> e-mail</label>
+							<input type="text" class="validate[required] text-input"/>
+						</div>
+						<div class="campo">
+							<label>Contraseña: </label>
+							<input type="password" class="validate[required] text-input"/>
+                   <a href="forgot_password.html" rel="forgot_password" class="forgot linkform">¿Olvidaste tu contraseña?</a>
+						</div>
+						<div class="bottom">
+						  <div class="remember"><input type="checkbox" /><span>Mantenerme conectado</span></div>
+							<input type="submit" value="Enviar"></input>
+					<a href="register.html" rel="register" class="linkform">¿No tienes cuenta? Registrate aquí</a>
+							<div class="clear"></div>
+						</div>
+					</form>
+                    
+                    
+					<form class="forgot_password" id="forget">
+					  <div class="campo">
+					    <label>Apodo o Email:</label>
+							<input type="text"  class="validate[required] text-input"/>
+					  </div>
+						<div class="bottom">
+						  <input type="submit" value="Recuérdame">
+							</input>
+							<a href="index.html" rel="login" class="linkform">¿Lo acabas de recordar? Entra aquí</a>
+							<a href="register.html" rel="register" class="linkform">¿No tienes cuenta? Registrate aquí</a>
+							<div class="clear"></div>
+						</div>
+				  </form>
+                  --> 
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="content_i">
+        <div id="logo"><img src="../media/images/logo_entrecalle.png"/></div>
+        <div id="registro"> <a href="login.html" rel="register" class="linkform">¿Ya tienes cuenta?</a><br />
+          <div class="reg"><a href="login.html" rel="login" class="linkform">Entrar</a></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

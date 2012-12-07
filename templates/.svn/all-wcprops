@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/entrecalle/!svn/ver/36/trunk/templates
+END
+landing.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/entrecalle/!svn/ver/21/trunk/templates/landing.html
+END
+privacy.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/entrecalle/!svn/ver/26/trunk/templates/privacy.html
+END
+error404.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/entrecalle/!svn/ver/19/trunk/templates/error404.html
+END
+forgot_password.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/entrecalle/!svn/ver/38/trunk/templates/forgot_password.html
+END
+estilos.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/entrecalle/!svn/ver/38/trunk/templates/estilos.html
+END
+autores.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/entrecalle/!svn/ver/22/trunk/templates/autores.html
+END
+agregar_autor.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/entrecalle/!svn/ver/24/trunk/templates/agregar_autor.html
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/entrecalle/!svn/ver/38/trunk/templates/register.html
+END
+usuario.html
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/entrecalle/!svn/ver/29/trunk/templates/usuario.html
+END
+agregar_estilo.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/entrecalle/!svn/ver/38/trunk/templates/agregar_estilo.html
+END
+index2.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/entrecalle/!svn/ver/13/trunk/templates/index2.html
+END
+.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/entrecalle/!svn/ver/38/trunk/templates/.DS_Store
+END
+agregar_foto.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/entrecalle/!svn/ver/38/trunk/templates/agregar_foto.html
+END
+terminosdeuso.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/entrecalle/!svn/ver/25/trunk/templates/terminosdeuso.html
+END
+password.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/entrecalle/!svn/ver/29/trunk/templates/password.html
+END
+agregar_edificio.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/entrecalle/!svn/ver/38/trunk/templates/agregar_edificio.html
+END
+nav1.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/entrecalle/!svn/ver/18/trunk/templates/nav1.html
+END
+agregar_cronica.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/entrecalle/!svn/ver/38/trunk/templates/agregar_cronica.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/entrecalle/!svn/ver/38/trunk/templates/index.html
+END
+anunciate.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/entrecalle/!svn/ver/26/trunk/templates/anunciate.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/entrecalle/!svn/ver/38/trunk/templates/login.html
+END
+contacto.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/entrecalle/!svn/ver/26/trunk/templates/contacto.html
+END
+edificio.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/entrecalle/!svn/ver/38/trunk/templates/edificio.html
+END

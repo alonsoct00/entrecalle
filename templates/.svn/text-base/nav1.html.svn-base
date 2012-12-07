@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link type="text/css" rel="stylesheet" href="../media/css/styles.css"/>
+<script type="text/javascript" src="../media/js/jquery-1.7.2.js"></script>
+
+
+<title>Entre Calle</title>
+</head>
+
+<body>
+<div id="main">
+<div id="content">
+ <div id="scrollback"></div>
+ <div id="wrapper">
+    
+	<div id="top">
+    	<div id="header">
+        	<div id="logo"><img src="images/logo.png" alt="logo1" width="109" height="107" /></div>
+       	  <ul id="nav_m">
+                	<li></li>
+            		<li><a href="">Inicio</a></li>
+                    <li><a href="#">Estilos</a></li>
+                    <li><a href="#">Autores</a></li>
+                    <li><a href="#">Los Olvidados</a></li>
+                    <li><a href="#">Sketchbook</a></li>
+                    
+                    <li><a href="/logout">Salir</a></li>
+                   
+                    <li><a href='#' class='osx'>Iniciar Sesión</a></li>
+                    
+              <li class="busca"><a href="#">buscar<input name="buscar" type="text" value=" " size="26px" class="buscar" /></a></li>
+          </ul>
+          
+           
+            <div id="usertop">
+            <ul id="nav_u">
+            <li><a href='#' class='osx'><img src="" alt="perfil" name="perfil" width="60" height="60" id="perfil" style="background-color: #CCCCCC" /></a></li>
+            <li><a href="">{{datos.Nick}}<br />{{datos.Permisos}}</a></li>
+            <li><a href="">Puntos<br />{{datos.Ranknig}}</a></li>
+            <li><a href="">Comentarios<br />{{datos.N_Comentarios}}</a></li>
+            <li><a href="">Fotografías<br />{{datos.N_Fotografias}}</a></li>
+            <li><a href="">Reseñas<br />{{datos.N_Resenas}}</a></li>
+            <li><a href="">Biografías<br />{{datos.N_Biografias}}</a></li>
+            <li><a href="">Habitantes:&nbsp;00<br />&nbsp;</a></li>
+            </ul>
+            </div>
+        
+        </div><!--end header-->
+    </div><!--end top-->
+    <div class="clr"></div>
+    	
+
+   <div id="center_s">
+                   <div class="left_s">
+                   <div class="nombre_edificio">Nombre_Edificio</div>
+                   <div id="likes">
+                   	<div class="like"><img src="" height="20px" width="20px" /></div>
+                    <div class="unlike"><img src="" height="20px" width="20px" /></div>
+                   </div>
+                   <div id="slider"></div>
+                    <div id="contenidos">
+                    	<div class="tipotxt">tipo_texto</div>
+                        <div class="edit">[Editar]</div>
+                        <div class="textos"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lorem augue. In aliquet, ante ac tristique consequat, odio eros cursus orci, in laoreet mi nisi eu risus. Nullam ornare est et nisl consectetur aliquet. Sed blandit odio eu est rutrum feugiat. Duis quis elit libero. Proin in eros purus, vitae tristique est. Etiam ultrices mattis tortor, sit amet faucibus arcu semper ac. Maecenas sem dui, tristique ac adipiscing et, convallis a ipsum. In posuere nibh non diam laoreet ornare. Integer vestibulum lectus et diam pretium sodales. Mauris elementum faucibus diam id consectetur. Proin vehicula luctus elit, nec euismod felis pharetra vitae. Sed sagittis rhoncus ornare. Nunc a enim at massa fringilla volutpat ac vel dui. Fusce rhoncus, ligula sit amet rhoncus tempor, dolor lacus porttitor sem, non tincidunt eros justo nec orci. In sapien enim, facilisis ac molestie a, dictum at mauris. </p></div>
+                       
+                        <div class="clr"></div>
+                        
+                        <div class="tipotxt">Tipo_texto</div>
+                        <div class="edit">[Editar]</div>
+                        <div class="textos"><p>Nunc in metus nec arcu fringilla cursus eu sit amet eros. Integer gravida enim et ligula consequat tincidunt. Nulla hendrerit lobortis justo, in condimentum urna condimentum non. Etiam sed magna ligula. Morbi luctus vehicula sapien vehicula tempus. Quisque nec tincidunt tortor. Mauris lacinia, nulla eu accumsan egestas, nulla justo lobortis tellus, vel dapibus lorem nibh quis mauris. Suspendisse porta leo sed velit ornare eget rhoncus turpis vulputate. Nam tellus elit, interdum eu blandit ut, accumsan nec felis. Suspendisse eget ante mi. Nulla ligula nibh, ultrices eget consectetur eget, auctor vitae felis. </p></div>
+                       
+                        <div class="clr"></div>
+                        
+                        <div class="tipoestilo">Tipo_estilo</div>
+                        <div class="perfilestilo">Ver_perfil_estilo</div>
+                        <div class="descripcionestilo">Nam tempus lobortis accumsan. Praesent porttitor dolor ac massa viverra vel sagittis mauris rhoncus. Vivamus bibendum, nisi id accumsan placerat, risus ante gravida odio, quis posuere justo leo vitae orci. Integer id enim a neque sagittis vulputate ac sit amet eros. Donec tristique libero et quam venenatis nec cursus sapien porttitor. Cras sed ligula erat, ut iaculis diam. Nam lobortis, leo ac sagittis feugiat, neque lacus molestie turpis, vitae imperdiet sapien nunc id ligula. Praesent in justo eu lorem dignissim molestie.</div>
+                        
+         <div id="map_s">
+            <section id="wrapper_s">
+                
+                <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+                <script>
+                function success(position) {
+                  var s = document.querySelector('#status');
+                  
+                  if (s.className == 'success') {
+                    return;
+                  }
+                  
+                  s.innerHTML = "hola";
+                  s.className = 'success';
+                  
+                  var mapcanvas = document.createElement('div');
+                  mapcanvas.id = 'mapcanvas';
+                  mapcanvas.style.height = '400px';
+                  mapcanvas.style.width = '570px';
+                    
+                  document.querySelector('article').appendChild(mapcanvas);
+                  
+                  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                  var myOptions = {
+                    zoom: 15,
+                    center: latlng,
+                    mapTypeControl: false,
+                    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                  };
+                  var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
+                  
+                  var marker = new google.maps.Marker({
+                      position: latlng, 
+                      map: map, 
+                      title:"Ubicacion"
+                  });
+                }
+                
+                function error(msg) {
+                  var s = document.querySelector('#status');
+                  s.innerHTML = typeof msg == 'string' ? msg : "failed";
+                  s.className = 'fail';
+                  
+                  // console.log(arguments);
+                }
+                
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(success, error);
+                } else {
+                  error('not supported');
+                }
+                
+                </script> 
+                </section>
+       </div><!--end map-->
+       
+       <div id="stat">
+       <ul id="stats">
+       <li><a href="#">Olvidados den: 000</a></li>
+       <li><a href="#">Olvidados recup: 000</a></li>
+       <li><a href="#">Olvidados tot: 000</a></li>
+       </ul>
+       </div>
+                   
+                   
+                    </div>
+   </div>
+   				<div class="right_s">
+                	<div id="anuncios">
+                    	<div class="sponsor"><div class="sponsor_photo"><img src="" height="80px" width="80px" /></div>
+                        <div class="sponsor_text">
+                        	<p>Mauris elementum faucibus diam id consectetur. Proin vehicula luctus elit, nec euismod felis pharetra vitae.</p></div>
+                        </div>
+                        <div class="partner">Lorem ipsum dolor sit amet, consectetur.</div>
+                        <div class="partner">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+                        <div class="partner">Lorem ipsum dolor sit amet, consectetur.</div>
+                        <div class="partner">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+                    </div>
+                    <div id="commentsbar">Comentarios</div>
+                    <div id="twitter">
+                    <div class="tittle_bar"><img src="" alt="twitter" width="350px" height="40px" /></div>
+                    </div>
+                    <div id="suggestions">
+                    <div class="tittle_bar">¿Sugerencias?</div>
+                    </div>
+                    <div id="followus">
+                    <div class="tittle_bar">Sigue nuestras redes</div>
+                    </div>
+                    
+                </div>
+   
+   </div><!--end center_s-->
+        
+
+ </div><!--end wrapper-->
+</div><!--end content-->
+</div><!--end main-->
+
+</body>
+</html>

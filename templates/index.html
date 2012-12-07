@@ -1,0 +1,282 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="..media/images/favicon.ico" type="image/x-icon"/>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="../media/js/sliding.js"></script>
+<script type="text/javascript" src="../media/js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="../media/js/jquery.easing.js"></script>
+<script type="text/javascript" src="../media/js/jquery.collapse.js"></script>
+	<script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".ajax").colorbox();
+				/*$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});*/
+			});
+		</script>
+<link type="text/css" rel="stylesheet" href="../media/css/styles.css"/>
+<title>Entrecalle</title>
+</head>
+
+<body>
+<div id="fixmenu"><a class='ajax' href="agregar_edificio.html" title="Cargar Edificio"></a></div>
+<div id="fixmenu1"><a class='ajax' href="agregar_foto.html" title="Cargar Fotografía"></a></div>
+<!--<div id="fixmenu2"></div>
+<div id="fixmenu3"></div>-->
+
+<div id="main">
+  <div id="content">
+   
+    <div id="wrapper">
+      <div id="top">
+        <div id="header">
+          <div id="logo"><a href="index.html"><img src="../media/images/logo.png" alt="logo_109x107" width="105" height="103" /></a></div>
+          <div id="redes">
+            <ul id="social">
+              <li class="show"><a href=""><img src="../media/inicio/boton_iniciar_sesion.png" alt="inicia sesion" width="186" height="36" /></a></li>
+              <!--<li><a href=""><img src="../media/images/icn_face.png" alt="fb" width="36" height="36" /></a></li>
+              <li><a href=""><img src="../media/images/icn_twitter.png" alt="fb" width="36" height="36" /></a></li>-->
+            </ul>
+            <div id="log" class="log">
+              <form class="logon" action="#">
+                <div class="campo">
+                  <label>Apodo o e-mail</label>
+                  <input type="text" />
+                </div>
+                <div class="campo">
+                  <label>Contraseña: </label>
+                  <input type="password" />
+                  <a href="forgot_password.html">¿Olvidaste tu contraseña?</a> </div>
+                <div class="bottom">
+                
+                  <input type="submit" value="Enviar" />
+                  <div class="fb_connect"><img src="../media/registro_box/fb_connect.png" width="160" height="18"/></div>
+                  <a href="register.html">¿No tienes cuenta? Registrate aquí</a>
+                  <div class="clear"></div>
+                </div>
+              </form>
+            </div>
+            <!--end_log--> 
+          </div>
+          <!--end_redes-->
+          <nav id="nav_m">
+            <ul>
+              <li></li>
+              <li><a href="#">Los Olvidados</a></li>
+              <li><a href="#">Se Buscan</a></li>
+              <li><a href="#">Estilos</a></li>
+              <li><a href="#">Autores</a></li>
+              <!--<li><a href="#">Sketchbook</a></li>-->
+              <li><a href="#">Galería</a></li>
+              <li>
+                <div id="search">
+                  <input type="search" value="Buscar" />
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div id="usertop">
+            <nav id="nav_u">
+              <ul>
+                <li class="imgp"><img src="../media/images/dummys/dummy2.png" alt="profilepic" width="40" height="40"/></li>
+                <li><a href="">datos.Nick<br/>
+                  <small>tipo_user</small></a></li>
+                <li><a href="">Puntos:<br/>
+                  <small>00</small></a></li>
+                <li><a href="">Comentarios:<br/>
+                  <small>00</small></a></li>
+                <li><a href="">Fotografías:<br/>
+                  <small>00</small></a></li>
+                <li><a href="">Reseñas:<br/>
+                  <small>00</small></a></li>
+                <li><a href="">Biografías:<br/>
+                  <small>00</small></a></li>
+                <li><a href=""><strong>Habitantes:<br/>
+                  <small>00</small></strong></a></li>
+              </ul>
+            </nav>
+          </div>
+          <!--end usertop--> 
+        </div>
+        <!--end header--> 
+      </div>
+      
+      <!--desde aqui cambiamos cada seccion-->
+    <section class="contenidos">
+    
+      <div id="middle">
+        <section id="wrapper_m">
+          <div id="map_canvas">
+            <div id="cat">
+              <ul id="listapin">
+                <li><a href="#">Monumento Histórico <small><img src="../media/inicio/INDICADORES/AMARILLOSO.png" alt="pin"/></small></a></li>
+                <li><a href="#">Vivienda<small><img src="../media/inicio/INDICADORES/AZUL_CIOLOSO.png" alt="pin"/></small></a></li>
+                <li><a href="#">Deporte <small><img src="../media/inicio/INDICADORES/MAJENTOSO.png" alt="pin"/></small></a></li>
+                <li><a href="#">Espacio Urbano y Paisaje <small><img src="../media/inicio/INDICADORES/VERDOSO.png" alt="pin"/></small></a></li>
+                <li><a href="#">Construcción Antigua <small><img src="../media/inicio/INDICADORES/NARANJOSO.png" alt="pin"/></small></a></li>
+                <li><a href="#">Construcción Contemporánea <small><img src="../media/inicio/INDICADORES/ROJO.png" alt="pin"/></small></a></li>
+                <!--<li><a href="#">Alquiensabeque <small><img src="../media/inicio/INDICADORES/VERDE_BANDEROSO.png" alt="pin"/></small></a></li>
+                <li class="plus"><a href="#">Espacios Abiertos</a>
+                  <ul class="sub">
+                    <li><a href="#">Plazas <small><img src="../media/inicio/INDICADORES/VERDESOSO_CLARO.png" alt="pin"/></small></a></li>
+                    <li><a href="#">Jardines <small><img src="../media/inicio/INDICADORES/VERDESOSO_CLARO.png" alt="pin"/></small></a></li>
+                    <li><a href="#">Alamedas <small><img src="../media/inicio/INDICADORES/VERDESOSO_CLARO.png" alt="pin"/></small></a></li>
+                    <li><a href="#">nosequedice <small><img src="../media/inicio/INDICADORES/VERDESOSO_CLARO.png" alt="pin"/></small></a></li>
+                    <li><a href="#">nosequedice <small><img src="../media/inicio/INDICADORES/VERDESOSO_CLARO.png" alt="pin"/></small></a></li>
+                  </ul>
+                </li>-->
+              </ul>
+            </div>
+            <!--end ctegory-->
+            <div class="mapa"> 
+              <img src="../media/images/dummys/mapa875x415.png" width="900" height="415"/>
+            </div>
+            <!--end mapa-->
+            <div id="controles">
+            <div class="botonc"> <span class="categ"><a href="#"><img src="../media/inicio/boton_categorias.png" alt="categorias" width="24" height="153" /></a></span> </div>
+            <div class="botonc"> <span class="cpin"><a href="#"><img src="../media/inicio/boton_agrega_localiza.png" alt="localiza" width="24" height="23" /></a> </span> </div>
+            <!--<div class="botonc"> <span class="editas"><a href="#"><img src="../media/inicio/boton_edita.png" alt="edita" width="24" height="21" /></a></span> </div>--> 
+          </div> 
+            
+          </div>
+        <!--end map canvas--></section>
+        <!--end wrapper_m--> 
+      </div>
+      <!--end middle-->
+      <div id="center">
+        
+        <div class="scroll">
+          <div class="titulo_scroll">Los Olvidados</div>
+          <div class="pie_foto">Un vistazo a la historia muerta</div>
+          <div class="foto_scroll">
+            <div class="txtphoto"> <span class="ontxt">Denuncia edificaciones que necesitan ser rescatadas o que representan un riesgo de vivienda, seguridad, salud, o estructura. </span> </div>
+            <div class="photo"><img src="../media/images/dummys/280x200.png" alt="foto" width="290" height="208"/></div>
+          </div>
+        </div>
+        <div class="scroll">
+          <div class="titulo_scroll">Estilos</div>
+          <div class="pie_foto">La visión del artista</div>
+          <div class="foto_scroll">
+            <div class="txtphoto"> <span class="ontxt">Los estilos que refleja cada uno de los edificios, puedes encontrarlos aquí.</span> </div>
+            <div class="photo"><img src="../media/images/dummys/280x200.png" alt="foto" width="290" height="208"/></div>
+          </div>
+        </div>
+          <div class="scroll">
+          <div class="titulo_scroll">Estilos</div>
+          <div class="pie_foto">La visión del artista</div>
+          <div class="foto_scroll">
+            <div class="txtphoto"> <span class="ontxt">Los estilos que refleja cada uno de los edificios, puedes encontrarlos aquí.</span> </div>
+            <div class="photo"><img src="../media/images/dummys/280x200.png" alt="foto" width="290" height="208"/></div>
+          </div>
+      </div>
+    </div>
+      <!--end center-->
+      
+      <div class="clr"></div>
+      <section id="section2">
+        <div id="sec2">
+          <div class="scroll2">
+            <div class="sponsors">
+              <div class="photospn"><img src="../media/images/dummys/90x90.png"/></div>
+              <div class="txtspn"> Morbi ac nisl in sapien vehicula posuere sit amet non lorem. 
+                Aenean laoreet quam sed nunc molestie vitae elementum nisi rutrum. 
+                Praesent vehicula massa sed mi luctus congue. </div>
+            </div>
+            <!--<div id="li_actual">
+              <ul class="li_actual">
+                <li><a href="#"><span class="datos">Olvidados Denunciados:</span><small>00</small></a></li>
+                <li><a href="#"><span class="datos">Olvidados Recuperados:</span><small>00</small></a></li>
+                <li><a href="#"><span class="datos">Olvidados Totales:</span><small>00</small></a></li>
+              </ul>
+              <div class="clr"></div>
+              <div class="clr"></div>
+              <ul class="li_actual">
+                <li><a href="#"><span class="datos">Visitantes:</span><small>00</small></a></li>
+                <li><a href="#"><span class="datos">Observadores:</span><small>00</small></a></li>
+                <li><a href="#"><span class="datos">Habitantes:</span><small>00</small></a></li>
+              </ul>
+            </div>--> 
+          </div>
+          <div class="scroll2">
+            <div class="sponsors">
+              <div class="photospn"><img src="../media/images/dummys/90x90.png"/></div>
+              <div class="txtspn"> Morbi ac nisl in sapien vehicula posuere sit amet non lorem. 
+                Aenean laoreet quam sed nunc molestie vitae elementum nisi rutrum. 
+                Praesent vehicula massa sed mi luctus congue. </div>
+            </div>
+          </div>
+          <div class="scroll2">
+            <div class="sponsors">
+              <div class="photospn"><img src="../media/images/dummys/90x90.png"/></div>
+              <div class="txtspn"> Morbi ac nisl in sapien vehicula posuere sit amet non lorem. 
+                Aenean laoreet quam sed nunc molestie vitae elementum nisi rutrum. 
+                Praesent vehicula massa sed mi luctus congue. </div>
+            </div>
+          </div>
+        </div>
+        <!--end sec2--> 
+      </section>
+      <!--<div id="sec3">
+        <div class="scroll3">
+          <div class="cont_s3"></div>
+        </div>
+        <div class="scroll3">
+          <div class="cont_s3">
+          <div id="sugerencias"> <span>¿Sugerencias?</span> <small>Tus correos son muy importantes</small> <span class="mail">info@entrecalle.com</span> </div>
+          </div>
+        </div>
+        <div class="scroll3">
+          <div class="cont_s3">
+            <div id="comentarios"> <span class="hc">Comentarios</span>
+              <div id="inputhc">
+                <textarea cols="33" rows="4" class="comments"></textarea>
+                <p></p>
+                <br />
+                <input name="" type="button" value="Enviar" />
+              </div>
+              <hr />
+              <div id="livecomments"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      end section3-->
+      
+     </section><!--section contenidos--> 
+      <div class="clr"></div>
+      <section id="footersection"><!--footer section-->
+        <footer>
+          <div id="txt_footer"><span class="blue">Entrecalle  
+            <script type="text/javascript"> copyright=new Date(); actualiza=copyright.getFullYear(); document.write("Copyright " + "" + actualiza + "  " + "&copy;"); </script>
+          </span> | Prohibida la copia parcial o total de este sitio web | <a href="#" target="_blank">Políticas de privacidad</a> y<a href="#" target="_blank"> Términos de uso</a> | 
+         </div>
+          <div id="redes_footer">
+            <ul id="social">
+              <li class="show"></li>
+              <li><a href=""><img src="../media/images/icn_face.png" alt="fb" width="20" height="20" /></a></li>
+              <li><a href=""><img src="../media/images/icn_twitter.png" alt="twt" width="20" height="20" /></a></li>
+              <li><a href=""><img src="../media/images/mail.png" alt="mail" width="20" height="20"/></a></li>
+            </ul>
+          </div>
+        </footer>
+      </section>
+      <!--end footer section--> 
+      
+    </div>
+    <!--end wrapper--> 
+    
+  </div>
+  <!--end content--> 
+  
+</div>
+<!--end main-->
+
+</body>
+</html>

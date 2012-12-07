@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link type="text/css" rel="stylesheet" href="{{MEDIA_URL}}css/styles.css"/>
+<script type="text/javascript" src="{{MEDIA_URL}}js/jquery-1.7.2.js"></script>
+
+<!--  GMAPS  -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="{{MEDIA_URL}}js/gmaps.js"></script>
+<script type="text/javascript">
+    var map;
+    $(document).ready(function(){
+      map = new GMaps({
+        div: '#map',
+        lat: 22.796439,
+        lng: -100.422364,
+        height: '100px',
+	zoom: 4,
+	streetview: true,
+      });//fin del map
+//creamos un menu para poner marcas
+map.setContextMenu({
+        control: 'map',
+        options: [{
+          title: 'Agregar marca',
+          name: 'agregar_marca',
+          action: function(e){
+            this.addMarker({
+              lat: e.latLng.lat(),
+              lng: e.latLng.lng(),
+            });
+            this.hideContextMenu();
+	    document.alta.longitud.value = e.latLng.lng();
+	    document.alta.latitude.value= e.latLng.lat();
+          }
+        }]
+      });//Fin de agregar_marca
+    });//fin de la function
+  </script>
+
+<title>Entre Calle</title>
+{% load multiuploader %}
+</head>
+
+<body>
+<div id="main">
+<div id="content">
+ <div id="scrollback"></div>
+ <div id="wrapper">
+    
+	<div id="top">
+    	<div id="header">
+        	<div id="logo"><img src="{{MEDIA_URL}}images/logo.png" alt="logo1" width="109" height="107" /></div>
+       	  <ul id="nav_m">
+                	<li></li>
+            		<li><a href="#">Inicio</a></li>
+                    <li><a href="#">Estilos</a></li>
+                    <li><a href="#">Autores</a></li>
+                    <li><a href="#">Los Olvidados</a></li>
+                    <li><a href="#">Sketchbook</a></li>
+                    <li></li>
+            	</ul>
+           
+            <div id="usertop">
+            <ul id="nav_u">
+            <li><a href=""><img src="" alt="perfil" name="perfil" width="32" height="32" id="perfil" style="background-color: #CCCCCC" /></a></li>
+            <li><a href="">User<br />Tipo_usuario</a></li>
+            <li><a href="">Puntos<br />00</a></li>
+            <li><a href="">Comentarios<br />00</a></li>
+            <li><a href="">Fotografías<br />00</a></li>
+            <li><a href="">Reseñas<br />00</a></li>
+            <li><a href="">Biografías<br />00</a></li>
+            <li><a href="">Habitantes:&nbsp;00</a></li>
+            </ul>
+            </div>
+        
+        </div><!--end header-->
+    </div><!--end top-->
+    <div class="clr"></div>
+    	
+
+   <div id="center_s">
+                   <div class="left_s">
+            			<form action="" method="POST" id="alta" name="alta">
+            				{% csrf_token %}
+							{{form.as_p}}
+				    			<div id="map" style="width: 100%;height: 300px;"></div>
+							<input type="submit" value="Enviar" />
+						</form>
+						
+						 
+    					 {% multiupform %}
+                	</div>
+   
+   </div><!--end center_s-->
+        
+
+ </div><!--end wrapper-->
+</div><!--end content-->
+</div><!--end main-->
+
+</body>
+</html>
